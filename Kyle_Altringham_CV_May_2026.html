@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyle Altringham — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #e8e8e4;
+    padding: 32px 16px;
+  }
+
+  .page {
+    background: #ffffff;
+    max-width: 794px;
+    margin: 0 auto;
+    padding: 32px 44px 40px 44px;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    margin-bottom: 28px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d0d0d0;
+  }
+
+  .header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .header .title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+
+  .header .contact {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 10.5px;
+    color: #666;
+  }
+
+  .header .contact a {
+    color: #666;
+    text-decoration: none;
+  }
+
+  .header .contact span::before {
+    content: '·';
+    margin-right: 16px;
+    color: #bbb;
+  }
+
+  .header .contact span:first-child::before { display: none; }
+
+  /* ── LAYOUT ── */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 170px;
+    gap: 0 36px;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+    margin-top: 22px;
+  }
+
+  .section-label:first-child { margin-top: 0; }
+
+  /* ── ROLES ── */
+  .role { margin-bottom: 16px; }
+
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .role-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+
+  .role-dates {
+    font-size: 10px;
+    color: #999;
+    white-space: nowrap;
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+
+  .role-company {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .role-subsection {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 8px 0 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .role ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .role ul li {
+    font-size: 11px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+
+  .role ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #bbb;
+    font-size: 9px;
+    top: 1px;
+  }
+
+  .role p {
+    font-size: 11px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar .section-label { margin-top: 22px; }
+  .sidebar .section-label:first-child { margin-top: 0; }
+
+  .sidebar-item {
+    font-size: 11px;
+    color: #333;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+
+  .skill-list {
+    font-size: 11px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .divider {
+    border: none;
+    border-top: 0.5px solid #e0e0e0;
+    margin: 4px 0 0;
+  }
+
+  /* ── PROFILE ── */
+  .profile {
+    font-size: 11.5px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 4px;
+  }
+
+  .profile + .profile { margin-top: 6px; }
+
+  /* ── PRINT ── */
+  @media print {
+    body { background: white; padding: 0; }
+    .page { padding: 32px 40px; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Kyle Altringham</h1>
+    <div class="title">Senior UI Designer &nbsp;·&nbsp; Tesco Technology</div>
+    <div class="contact">
+      <span>k.altringham@gmail.com</span>
+      <span>linkedin.com/in/kyle-altringham</span>
+      <span>London</span>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- MAIN COLUMN -->
+    <div class="main">
+
+      <div class="section-label">Profile</div>
+      <p class="profile">Senior designer with over 12 years of experience in product design, working across web and app for Tesco's customer-facing shopping platforms. After eight years at Tesco I have a deep understanding of how the business designs at scale, across design systems, ways of working, cross-functional delivery, and the design language that underpins our products.</p>
+      <p class="profile" style="margin-top:8px;">Highly skilled in UI design with a strong leadership practice. I've led design across multiple MFE product teams, managed direct reports, and driven cross-functional ways of working improvements between design, product, and engineering.</p>
+
+      <div class="section-label">Experience</div>
+
+      <!-- Tesco -->
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Senior UI Designer</span>
+          <span class="role-dates">Apr 2022 – present</span>
+        </div>
+        <div class="role-company">Tesco Technology</div>
+
+        <div class="role-subsection">Product delivery &amp; outcomes</div>
+        <ul>
+          <li>Leading the groceries website redesign, implementing Tesco's new design language across a high-traffic customer surface serving millions of customers weekly</li>
+          <li>Led a full overhaul of the orders and returns section, one of the most underinvested areas of the platform. Rebuilt legacy pages to bring them in line with accessibility standards, enabling faster testing and iteration. Launched a new returns flow for the marketplace proposition, with a feedback loop built in for continuous improvement</li>
+          <li>Launched Tesco Whoosh, Tesco's rapid grocery delivery proposition, across web, iOS, and Android, helping establish a new revenue stream for the business</li>
+          <li>Launched native checkout across iOS and Android, simplifying the end-to-end purchase journey and reducing friction at the most critical conversion point</li>
+          <li>Launched order tracking across web, iOS, and Android, improving post-purchase transparency and reducing customer service contacts</li>
+          <li>Long-running contribution to the homepage, one of the most politically complex areas of the platform with multiple squads and stakeholder groups, requiring ongoing influence and alignment to move work forward</li>
+          <li>Conducted in-store and lab-based qualitative user research as part of a project exploring how customers might use the Tesco app to find and scan products and exit without a traditional checkout, examining both the customer experience and the implications for product shrinkage</li>
+          <li>Currently leading the implementation of the new Tesco brand across multiple platform surfaces, including the Whoosh app homepage, a new visual browsing experience for the groceries platform, and a new top bar for the Whoosh app, which has been signed off by senior stakeholders and is now in testing</li>
+        </ul>
+
+        <div class="role-subsection">Brand &amp; vision</div>
+        <ul>
+          <li>Selected as part of a small, senior team alongside the Head of Design and one lead designer to respond to Tesco's rebrand brief. Translated the brand team's vision into a UI direction for the web and app shopping platforms, working across brand, content, and design systems teams. Produced the vision assets, secured sign-off from brand, content, and senior stakeholders, and handed over to the design systems team. The new design language has since launched across the design system and is now being adopted across all online shopping squads</li>
+        </ul>
+
+        <div class="role-subsection">Design quality &amp; strategic contribution</div>
+        <ul>
+          <li>Support design feedback and sign-off at team level through biweekly design reviews, ensuring work meets quality, accessibility, and design language standards before progressing</li>
+          <li>Led design across multiple MFE product teams, overseeing direction, coordinating tasks across squads, and ensuring consistency and technical feasibility, working with multiple product and engineering squads simultaneously to get work over the line and launched</li>
+          <li>Built a shared sandbox library and structured contribution model, enabling designers across squads to contribute to the design system safely, a practical step toward self-governance</li>
+          <li>Created a delivery checklist standardising the design to deployment process, reducing handoff ambiguity and empowering teams to drive their own delivery process</li>
+          <li>Created an accessibility checklist in collaboration with the accessibility lead and a UX writer, defining the gold standard of accessibility requirements for designers across the team, helping embed inclusive design into everyday practice</li>
+          <li>Developing AI literacy as a core part of my design practice, with a focus on how AI tooling can improve efficiency across ideation, prototyping, and design-engineering workflows</li>
+        </ul>
+
+        <div class="role-subsection">Leadership</div>
+        <ul>
+          <li>Experienced line manager, having managed direct reports across different squads, embedded within the leadership core of the team, contributing to direction, culture, team decision-making, and defining team objectives aligned to business goals</li>
+          <li>Supported direct reports through professional development, onboarding, goal-setting, and end-of-year performance reviews, helping them improve their ratings and progress their careers</li>
+          <li>Mentored multiple UI designers within the team across craft, ways of working, and career progression</li>
+          <li>Involved in the hiring of over 20 roles at Tesco, including a number as hiring manager, and contributed to a small cross-functional team working with HR to review and improve the design hiring process</li>
+          <li>Design language and systems advocate, driving adoption and contribution across product teams, accessibility ambassador (WCAG 2.1 AA)</li>
+        </ul>
+      </div>
+
+      <!-- Tesco UI Product Designer -->
+      <div class="role" style="margin-top:16px;">
+        <div class="role-header">
+          <span class="role-title">UI Product Designer</span>
+          <span class="role-dates">Jul 2018 – Apr 2022</span>
+        </div>
+        <div class="role-company">Tesco Technology</div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- 2Go Match -->
+      <div class="role" style="margin-top:16px;">
+        <div class="role-header">
+          <span class="role-title">Freelance Product Designer</span>
+          <span class="role-dates">Jan 2020 – Sep 2020</span>
+        </div>
+        <div class="role-company">2Go Match</div>
+        <ul>
+          <li>End-to-end design lead on a new dating app for the South African market — brand, UI, UX, and marketing — working directly with the CEO and engineering team from concept to launch</li>
+        </ul>
+      </div>
+
+      <hr class="divider">
+
+      <!-- Topshop -->
+      <div class="role" style="margin-top:16px;">
+        <div class="role-header">
+          <span class="role-title">Digital &amp; UI Designer</span>
+          <span class="role-dates">Mar 2014 – Jul 2018</span>
+        </div>
+        <div class="role-company">Topshop Topman</div>
+        <ul>
+          <li>Led mobile and app platforms, launched international mobile websites, rebuilt native apps, redesigned the mobile checkout, and designed homepage content, email campaigns, and social media assets</li>
+        </ul>
+      </div>
+
+      <hr class="divider">
+
+      <!-- Serious Fox -->
+      <div class="role" style="margin-top:16px;">
+        <div class="role-header">
+          <span class="role-title">Design &amp; Development</span>
+          <span class="role-dates">Jan 2012 – Jul 2012</span>
+        </div>
+        <div class="role-company">Serious Fox</div>
+        <ul>
+          <li>Worked as a designer at a development agency during my degree, the only designer in a team of developers. An early introduction to the relationship between design and engineering that shaped my approach to product design.</li>
+        </ul>
+      </div>
+
+    </div><!-- /main -->
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <div class="section-label">Design &amp; UX</div>
+      <div class="skill-list">
+        Product design<br>
+        Interaction design<br>
+        UX / UI<br>
+        Design systems<br>
+        Component design<br>
+        Wireframing &amp; prototyping<br>
+        Responsive design<br>
+        Journey mapping<br>
+        User flows<br>
+        Information architecture<br>
+        Native app design (iOS &amp; Android)<br>
+        Accessibility — WCAG 2.1 AA
+      </div>
+
+      <div class="section-label">Research</div>
+      <div class="skill-list">
+        Qualitative user research<br>
+        Usability testing<br>
+        In-store &amp; lab research<br>
+        Evidence-based design
+      </div>
+
+      <div class="section-label">Leadership</div>
+      <div class="skill-list">
+        Line management<br>
+        Hiring &amp; recruitment<br>
+        Team direction &amp; coordination<br>
+        Design reviews &amp; critiques<br>
+        Cross-functional collaboration<br>
+        Stakeholder communication<br>
+        Mentoring
+      </div>
+
+      <div class="section-label">Design Systems</div>
+      <div class="skill-list">
+        Component libraries<br>
+        Contribution governance<br>
+        Design tokens<br>
+        Figma libraries &amp; tooling<br>
+        Adoption &amp; advocacy
+      </div>
+
+      <div class="section-label">Emerging practice</div>
+      <div class="skill-list">
+        AI tooling for design workflows<br>
+        Figma AI<br>
+        Design token systems<br>
+        Design–engineering integration
+      </div>
+
+      <div class="section-label" style="margin-top: 120px;">Tools</div>
+      <div class="skill-list">
+        Figma, FigJam, Dev Mode<br>
+        Figma Make<br>
+        ChatGPT, Claude<br>
+        Miro<br>
+        Jira, Confluence<br>
+        Webflow<br>
+        HTML, CSS, browser inspect<br>
+        Photoshop, Illustrator<br>
+        After Effects
+
+      <div class="section-label">Education</div>
+      <div class="sidebar-item">
+        <strong style="color:#1a1a1a; text-transform:none; letter-spacing:0; font-size:12px; font-weight:600;">BA (Hons) Graphics &amp; Digital Design</strong>
+        <span style="color:#888; font-size:11px;">2:1 &nbsp;·&nbsp; 2009–2013</span><br>
+        <span style="color:#555;">University of Greenwich</span>
+      </div>
+
+    </div><!-- /sidebar -->
+
+  </div><!-- /body -->
+</div><!-- /page -->
+</body>
+</html>
